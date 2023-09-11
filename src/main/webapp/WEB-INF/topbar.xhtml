@@ -1,0 +1,24 @@
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:po="http://primefaces.org/poseidon">
+
+    <div class="layout-topbar">
+        <div class="layout-topbar-wrapper">
+            <div class="layout-topbar-left">
+                <h:link id="logolink" styleClass="layout-topbar-logo">
+                    <p:graphicImage name="stc_logo.png" library="images" />
+                </h:link>
+                <h:form prependId="false">
+                    <p:commandButton value="Cancelar" action="#{licenciaView.cancelarRefrenda()}" update="pasosDeRefrenda" style="float: right;" styleClass="ui-button-raised ui-button-danger" />
+                </h:form>
+            </div>
+
+        </div>
+
+    </div>
+
+</ui:composition>
